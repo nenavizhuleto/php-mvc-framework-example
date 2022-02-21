@@ -11,7 +11,11 @@
             <div class="post__content">
                 <p class="post__title"><?= $photo->title ?></p>
                 <img src="<?= $photo->img ?>" alt="" class="post__img">
-                <p class="post__description"><?= $photo->desc ?></p>
+                <div class="post__description">
+                    <div class="description__text">
+                        <?= $photo->desc ?>
+                    </div>
+                </div>
                 <span class="post__date"><?= $photo->date ?></span>
             </div>
         </a>
