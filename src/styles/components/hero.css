@@ -67,7 +67,7 @@
 
 .hero__content {
 	display: flex;
-	justify-content: center;
+	justify-content: space-between;
 	overflow: hidden;
 	width: calc(100% - 256px);
 	height: 100%;

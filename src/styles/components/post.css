@@ -1,7 +1,7 @@
 /* POST */
 
 .post {
-	flex: 0 1 20%;
+	flex: 1 1 20%;
 	background-color: rgba(255, 255, 255, 0.185);
 	color: rgb(255, 255, 255);
 
@@ -28,8 +28,10 @@
 
 .post__title {
 	flex-grow: 2;
+	background-color: rgb(255, 255, 255);
+	color: rgb(0, 0, 0);
 	font-size: 1em;
-	text-shadow: 0 3px 10px rgb(0 0 0 / 0.5);
+	text-shadow: 0 3px 5px rgb(0 0 0 / 0.2);
 	text-transform: uppercase;
 	letter-spacing: 2px;
 	padding: 16px;
@@ -55,11 +57,11 @@
 }
 
 .post__content:hover .post__title {
-	transform: translate(0, -200%);
+	transform: translate(0, -100%);
 }
 
 .post__content:hover .post__date {
-	transform: translate(0, 200%);
+	transform: translate(0, 100%);
 }
 
 .description__text {
@@ -83,7 +85,9 @@
 .post__date {
 	flex-grow: 1;
 	font-size: 0.5em;
-	color: rgb(150, 150, 150);
+	background-color: rgb(255, 255, 255);
+	text-shadow: 0 3px 5px rgb(0 0 0 / 0.2);
+	color: rgb(0, 0, 0);
 	transition: 0.5s ease;
 	padding: 16px;
 }
