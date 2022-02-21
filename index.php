@@ -54,5 +54,8 @@ require_once('./src/bundle.php');
                 ?>
             </div>
         </main>
+        <footer>
+            <?= include_component('footer') ?>
+        </footer>
     </body>
 </html>
