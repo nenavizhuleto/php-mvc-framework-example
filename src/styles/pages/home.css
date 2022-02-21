@@ -1,0 +1,13 @@
+.home {
+	display: flex;
+	justify-content: center;
+	height: 100vh;
+}
+
+.home__content {
+	text-transform: uppercase;
+}
+
+.home__content h2 {
+	letter-spacing: 4px;
+}
