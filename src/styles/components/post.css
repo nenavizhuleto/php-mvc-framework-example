@@ -4,6 +4,8 @@
 	flex: 1 1 20%;
 	background-color: rgba(255, 255, 255, 0.185);
 	color: rgb(255, 255, 255);
+	max-width: 376px;
+	min-width: 312px;
 
 	height: calc(100% - 32px);
 	margin: 16px 16px;
@@ -90,4 +92,10 @@
 	color: rgb(0, 0, 0);
 	transition: 0.5s ease;
 	padding: 16px;
+}
+
+.date__text {
+	background-color: rgba(214, 214, 214, 0.651);
+	border-radius: 16px;
+	padding: 5px;
 }

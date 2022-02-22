@@ -39,19 +39,21 @@ require_once('./src/bundle.php');
                     <?php else: ?>
                         <?php include_page('home'); ?>
                     <?php endif; ?>
-                </div>
-                <?php
+                    <?php
                     
-                if(isset($_GET['page'])) {
-                    switch($_GET['page']) {
-                        case 'home': include_component('sidebar'); break;
-                        case 'about': include_component('sidebar'); break;
+                    if(isset($_GET['page'])) {
+                        switch($_GET['page']) {
+                            case 'home': include_component('sidebar'); break;
+                            case 'about': include_component('sidebar'); break;
+                            case 'gallery': include_component('sidebar'); break;
+                        }
+                    } else {
+                        include_component('sidebar');
                     }
-                } else {
-                    include_component('sidebar');
-                }
 
-                ?>
+                    ?>
+                </div>
+                
             </div>
         </main>
         <footer>

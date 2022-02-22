@@ -67,10 +67,9 @@
 
 .hero__content {
 	display: flex;
-	justify-content: space-between;
+	justify-content: center;
 	overflow: hidden;
 	width: calc(100% - 256px);
 	height: 100%;
-	/* flex-direction: column; */
 	flex-wrap: wrap;
 }

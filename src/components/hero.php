@@ -1,6 +1,8 @@
 <?php
     require_once('./src/service/controllers/photos.php');
-    $photos = get_photos();
+    $photos = get_photos(function ($photo) {
+        return $photo->id > 12;
+    });
 
 ?>
 
@@ -16,7 +18,11 @@
                         <?= $photo->desc ?>
                     </div>
                 </div>
-                <span class="post__date"><?= $photo->date ?></span>
+                <div class="post__date">
+                    <span class="date__text">
+                        <?= $photo->date ?>
+                    </span>    
+                </div>
             </div>
         </a>
     <?php endforeach; ?>
