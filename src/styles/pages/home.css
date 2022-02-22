@@ -1,8 +1,8 @@
 .home {
 	flex-grow: 4;
-	display: flex;
+	/* display: flex;
 	justify-content: center;
-	height: 25vh;
+	height: 25vh; */
 }
 
 .home__content {

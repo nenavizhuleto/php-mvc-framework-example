@@ -39,26 +39,7 @@ class Service {
         return $rows;
     }
 
-    function fetch(string $table_name, array $options) {
     
-        $query = "SELECT * FROM $table_name WHERE ";
-
-        $count = count($options);
-
-        foreach ($options as $key => $value) {
-            if (count($options) == 1) {
-                $query = $query."$key = '$value'";
-            } else {
-                $query = $query."$key = '$value' AND ";
-            }
-            array_shift($options);
-        }
-    
-        $row = $this->db->query($query);
-        $row = $row->fetch(PDO::FETCH_ASSOC);
-    
-        return $row;
-    }
 }
 
 ?>

@@ -2,11 +2,14 @@
 
 .sidebar {
 	flex-grow: 1;
-	height: 100vh;
+	height: 100%;
+	background-color: rgba(255, 255, 255, 0.5);
+	box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
 }
 
 .sidebar__content {
 	text-transform: uppercase;
+
 	font-size: 24px;
 	height: 256px;
 }
@@ -18,7 +21,7 @@
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	justify-content: space-between;
+	justify-content: space-around;
 }
 
 .sidebar__item {

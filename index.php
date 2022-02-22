@@ -45,7 +45,6 @@ require_once('./src/bundle.php');
                         switch($_GET['page']) {
                             case 'home': include_component('sidebar'); break;
                             case 'about': include_component('sidebar'); break;
-                            case 'gallery': include_component('sidebar'); break;
                         }
                     } else {
                         include_component('sidebar');
