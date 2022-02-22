@@ -1,0 +1,35 @@
+/* footer */
+
+footer {
+	background-color: #000;
+	width: 100%;
+	height: 10vh;
+	display: flex;
+	justify-content: center;
+}
+
+.footer__content {
+	color: #fff;
+	width: calc(100% - 256px);
+	display: flex;
+	align-items: center;
+	text-transform: uppercase;
+	letter-spacing: 4px;
+	font-size: 0.5em;
+}
+
+.footer__logo {
+	margin: 8px;
+}
+
+.footer__logo img {
+	filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(95deg)
+		brightness(104%) contrast(102%);
+	width: 32px;
+	height: auto;
+	object-fit: cover;
+}
+
+footer a {
+	color: #fff;
+}

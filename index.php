@@ -33,6 +33,7 @@ require_once('./src/bundle.php');
                                 case 'gallery': include_page('gallery'); break;
                                 case 'about': include_page('about'); break;
                                 case 'contact': include_page('contact'); break;
+                                case 'login': include_page('login'); break;
                                 default: include_page('home'); break;
                             } 
                         ?>
@@ -45,6 +46,7 @@ require_once('./src/bundle.php');
                         switch($_GET['page']) {
                             case 'home': include_component('sidebar'); break;
                             case 'about': include_component('sidebar'); break;
+                            case 'login': include_component('sidebar'); break;
                         }
                     } else {
                         include_component('sidebar');

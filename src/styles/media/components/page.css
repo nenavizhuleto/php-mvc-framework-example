@@ -1,0 +1,32 @@
+/* PAGE */
+
+.page {
+	display: flex;
+	height: 90vh;
+	justify-content: center;
+	background: linear-gradient(
+		90deg,
+		rgba(2, 0, 36, 1) 0%,
+		rgba(5, 16, 74, 1) 25%,
+		rgba(121, 9, 109, 1) 50%,
+		rgba(114, 61, 182, 1) 75%,
+		rgba(2, 0, 36, 1) 100%
+	);
+}
+
+.page__content {
+	display: flex;
+	justify-self: center;
+	background-color: rgba(255, 255, 255, 0.3);
+	backdrop-filter: blur(5em) saturate(150%);
+
+	width: calc(100% - 256px);
+	box-shadow: 0 3px 10px rgb(0 0 0 / 0.5);
+	text-align: center;
+}
+
+.page__content h2 {
+	padding: 32px 0;
+	text-transform: uppercase;
+	letter-spacing: 4px;
+}

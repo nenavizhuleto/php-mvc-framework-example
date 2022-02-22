@@ -1,0 +1,33 @@
+/* NAVIGATION */
+
+nav {
+	height: 10vh;
+	display: flex;
+	align-items: center;
+}
+
+.nav__content {
+	display: flex;
+	text-transform: uppercase;
+	font-size: 18px;
+}
+
+.nav__list {
+	display: flex;
+	list-style-type: none;
+}
+
+.nav__item {
+	padding: 8px 32px;
+}
+
+.nav__link {
+	color: linear-gradient(
+		90deg,
+		rgba(2, 0, 36, 1) 0%,
+		rgba(5, 16, 74, 1) 25%,
+		rgba(121, 9, 109, 1) 50%,
+		rgba(114, 61, 182, 1) 75%,
+		rgba(2, 0, 36, 1) 100%
+	);
+}
