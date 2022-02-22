@@ -19,11 +19,13 @@ require_once('./src/bundle.php');
             </nav>
         </header>
         <main>
+            <?php if (($_GET['page'] != 'login' and $_GET['page'] != 'about' and $_GET['page'] != 'contact')):  ?>
             <div class="hero">
                 <div id="btnLeft" class="arrow"></div>
                     <?= include_component('hero') ?>
                 <div id="btnRight" class="arrow"></div>
             </div>
+            <?php endif; ?>
             <div class="page">
                 <div class="page__content">
                     <?php if (isset($_GET['page'])): ?>
@@ -45,8 +47,7 @@ require_once('./src/bundle.php');
                     if(isset($_GET['page'])) {
                         switch($_GET['page']) {
                             case 'home': include_component('sidebar'); break;
-                            case 'about': include_component('sidebar'); break;
-                            case 'login': include_component('sidebar'); break;
+                            case 'gallery': include_component('sidebar'); break;
                         }
                     } else {
                         include_component('sidebar');

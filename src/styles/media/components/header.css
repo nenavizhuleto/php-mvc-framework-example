@@ -1,26 +1,24 @@
 /* HEADER */
 
-header {
-	width: calc(100% - 256px);
-	height: 10vh;
-	display: flex;
-	justify-content: space-between;
-}
+@media (max-width: 1120px) {
+	header {
+		width: calc(100% - 128px);
+		height: 10vh;
+		display: flex;
+		justify-content: center;
+	}
 
-.header__content {
-	display: flex;
-	align-items: center;
-	text-transform: uppercase;
-	letter-spacing: 4px;
-	font-size: 0.5em;
-}
+	.header__logo {
+		margin: 8px;
+	}
 
-.header__logo {
-	margin: 8px;
-}
+	.header__logo img {
+		width: 64px;
+		height: auto;
+		object-fit: cover;
+	}
 
-.header__logo img {
-	width: 32px;
-	height: auto;
-	object-fit: cover;
+	header h1 {
+		display: none;
+	}
 }

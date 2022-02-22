@@ -1,6 +1,12 @@
 /* PAGE */
 
-.page {
+@media (max-width: 1120px) {
+	.page__content {
+		width: 100%;
+	}
+}
+
+/* .page {
 	display: flex;
 	height: 90vh;
 	justify-content: center;
@@ -29,4 +35,4 @@
 	padding: 32px 0;
 	text-transform: uppercase;
 	letter-spacing: 4px;
-}
+} */
