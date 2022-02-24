@@ -1,13 +1,10 @@
 <?php
     require_once('./src/service/controllers/photos.php');
-    $photos = get_photos(function ($photo) {
-        return $photo->id > 12;
-    });
+    $photos = get_photos();
 
 ?>
 
 <div class="hero__content">
-    
     <?php foreach ($photos as $photo): ?>
         <a href="?post&id=<?= $photo->id ?>" class="post">
             <div class="post__content">

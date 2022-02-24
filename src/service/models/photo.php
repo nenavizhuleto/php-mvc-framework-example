@@ -27,7 +27,7 @@ class Photo {
         } 
 
 
-        return $result;
+        return array_values($result);
     }
 }
 
