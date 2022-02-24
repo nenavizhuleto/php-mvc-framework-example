@@ -4,6 +4,10 @@
         <li class="nav__item"><a href="?page=gallery" class="nav__link">Gallery</a></li>
         <li class="nav__item"><a href="?page=about" class="nav__link">About</a></li>
         <li class="nav__item"><a href="?page=contact" class="nav__link">Contact</a></li>
-        <li class="nav__item"><a href="?page=login" class="nav__link">Login</a></li>
+        <?php if(!Auth::isset()): ?>
+            <li class="nav__item"><a href="?page=login" class="nav__link">Login</a></li>
+        <?php else: ?>
+            <li class="nav__item"><a href="?logout" class="nav__link"><?= Auth::read()->name; ?></a></li>
+        <?php endif; ?>
     </ul>
 </div>

@@ -1,6 +1,13 @@
 <?php
 
 require_once('./src/bundle.php');
+session_start();
+
+if(isset($_GET['logout'])) {
+    Auth::destroy();
+    header("Location: /");
+    exit();
+}
 
 ?>
 
