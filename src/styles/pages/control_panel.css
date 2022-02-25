@@ -1,0 +1,13 @@
+.control_panel {
+	flex-grow: 4;
+}
+
+.control_panel__content {
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+}
+
+.control_panel__content h2 {
+	letter-spacing: 4px;
+}

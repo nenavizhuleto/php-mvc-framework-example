@@ -24,7 +24,6 @@ if (isset($_GET['auth'])) {
     }
 
     header("Location: ?page=login&error");
-
     exit();
 
 }
@@ -39,6 +38,9 @@ if (isset($_GET['auth'])) {
     <div class="login__content">
         <h2>Login form</h2>
         <form action="<?= $action ?>" method="POST" class="login__form">
+            <?php if (isset($_GET['error'])): ?>
+                <span class="error__msg">Login or password is incorrect</span>
+            <?php endif; ?>
             <input 
                 class="login__input" 
                 type="text" 

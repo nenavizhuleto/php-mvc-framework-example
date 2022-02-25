@@ -26,7 +26,7 @@ if(isset($_GET['logout'])) {
             </nav>
         </header>
         <main>
-            <?php if (($_GET['page'] != 'login' and $_GET['page'] != 'about' and $_GET['page'] != 'contact') and !isset($_GET['post'])):  ?>
+            <?php if (($_GET['page'] != 'login' and $_GET['page'] != 'about' and $_GET['page'] != 'contact' and $_GET['page'] != 'cp') and !isset($_GET['post'])):  ?>
             <div class="hero">
                 <div id="btnLeft" class="arrow"></div>
                     <?= include_component('hero') ?>
@@ -44,6 +44,7 @@ if(isset($_GET['logout'])) {
                                     case 'about': include_page('about'); break;
                                     case 'contact': include_page('contact'); break;
                                     case 'login': include_page('login'); break;
+                                    case 'cp': include_page('control_panel'); break;
                                     default: include_page('home'); break;
                                 } 
                             ?>
@@ -71,5 +72,6 @@ if(isset($_GET['logout'])) {
         <footer>
             <?= include_component('footer') ?>
         </footer>
+        <script src="./src/scripts/script.js"></script>
     </body>
 </html>
