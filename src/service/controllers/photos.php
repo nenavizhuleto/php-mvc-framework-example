@@ -9,8 +9,6 @@ function get_photos($filter=null) {
     } catch (PDOException $e) {
         die($e->getMessage());
     }   
-    
-
 }
 
 ?>

@@ -23,5 +23,9 @@ require_once('./src/service/models/user.php');
 require_once('./src/service/controllers/photos.php');
 require_once('./src/service/controllers/users.php');
 
+// Actions
+
+require_once('./src/actions/page.php');
+
 
 ?>
