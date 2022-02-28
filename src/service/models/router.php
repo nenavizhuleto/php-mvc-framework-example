@@ -9,25 +9,21 @@ class Router {
         $this->root_route = $root_route;
     }
 
-    public function get(string $route, callable $callback) {
+    public function get(string $route, callable $action, callable $else=null) {
         if ($route == $this->root_route) {
-            $callback();
+            $action();
         }
         if (isset($_GET[$route])) {
-            $callback($_GET[$route]);
+            $action($_GET[$route]);
+        }
+        if ($else && $_SERVER['REQUEST_URI'] == $this->root_route) {
+            $else();
         }
     }
 
-    public function nget(string $route, callable $callback) {
-        if ($route == $this->root_route) {
-            $callback();
-        }
-        if (!isset($_GET[$route])) {
-            $callback($_GET[$route]);
-        }
+    public function not(string $route, callable $callback) {
+
     }
-
-
 
     public function post(string $route, callable $callback) {
         

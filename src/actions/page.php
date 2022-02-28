@@ -6,8 +6,7 @@ class PageAction {
     public static $ACTION_HEADER = 'PageAction::HEADER';
     public static $ACTION_HERO = 'PageAction::HERO';
     public static $ACTION_HOME = 'PageAction::HOME';
-    public static $ACTION_PAGE = 'PageAction::PAGE';
-    public static $ACTION_LOGOUT = 'PageAction::LOGOUT';
+    public static $ACTION_SWITCHPAGE = 'PageAction::SWITCHPAGE';
 
     public static function HEADER($val=null) {
         include_component('header');
@@ -28,34 +27,35 @@ class PageAction {
         include_component('sidebar');
     }
 
-    public static function PAGE($val=null) {
-        switch($val) {
-            case 'home': 
-                include_page('home');
-                include_component('sidebar');
-                break;
-            case 'gallery': 
-                include_page('gallery'); 
-                include_component('sidebar');
-                break;
-            case 'about': include_page('about'); break;
-            case 'contact': include_page('contact'); break;
-            case 'login': include_page('login'); break;
-            case 'cp': include_page('control_panel'); break;
-            default: 
-                include_page('home');
-                include_component('sidebar');
-                break;
-        } 
+    public static function PAGE(string $page_name, bool $sidebar) {
+        include_page($page_name);
+        if ($sidebar) include_component('sidebar');
     }
 
-
-    
-
-    public static function LOGOUT($val=null) {
-        Auth::destroy();
-        header("Location: /");
-        exit();
+    public static function SWITCHPAGE($page=null) {
+        switch($page) {
+            case 'home': 
+                self::PAGE('home', true);
+                break;
+            case 'gallery': 
+                self::PAGE('gallery', true);
+                break;
+            case 'about': 
+                self::PAGE('about', false); 
+                break;
+            case 'contact': 
+                self::PAGE('contact', false); 
+                break;
+            case 'login': 
+                self::PAGE('login', false);  
+                break;
+            case 'cp': 
+                self::PAGE('control_panel', false);  
+                break;
+            default: 
+                self::PAGE('home', true);
+                break;
+        } 
     }
 }
 

@@ -1,14 +1,14 @@
 /* POST */
 
 .post {
-	flex: 1 1 20%;
+	flex-grow: 1;
 	background-color: rgba(255, 255, 255, 0.185);
 	color: rgb(255, 255, 255);
-	max-width: 376px;
+	max-width: calc(25% - 32px);
 	min-width: 312px;
 
 	height: calc(100% - 32px);
-	margin: 16px 16px;
+	margin: 16px 0px;
 	box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
 
 	cursor: pointer;

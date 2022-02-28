@@ -14,7 +14,7 @@
                     </a>
                     <div class="nav__menu" id="menu_block">
                         <ul>
-                            <li><a href="?action=create-post" class="nav__link">New post</a></li>
+                            <li><a href="?admin=create-post" class="nav__link">New post</a></li>
                             <li><a href="?logout" class="nav__link">Log out</a></li>
                         </ul>
                     </div>

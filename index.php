@@ -7,8 +7,7 @@ if(!isset($GLOBALS['router'])) {
     $GLOBALS['router'] = new Router('/');
 }
 
-$GLOBALS['router']->get('logout', PageAction::$ACTION_LOGOUT);
-
+$GLOBALS['router']->get('logout', AuthAction::$ACTION_LOGOUT);
 
 
 ?>
@@ -22,15 +21,15 @@ $GLOBALS['router']->get('logout', PageAction::$ACTION_LOGOUT);
 	</head>
 	<body>
         <header>
-            <?php $GLOBALS['router']->get('/', PageAction::$ACTION_HEADER); ?>
+            <?php $GLOBALS['router']->get('/', PageAction::$ACTION_HEADER) ?>
         </header>
         <main>
-            <?php $GLOBALS['router']->get('page', PageAction::$ACTION_HERO); ?>
-            <?php // $GLOBALS['router']->get('/', PageAction::$ACTION_HERO); ?>
+            <?php $GLOBALS['router']->get('page', PageAction::$ACTION_HERO, PageAction::$ACTION_HERO); ?>
             <div class="page">
                 <div class="page__content">
-                    <?php $GLOBALS['router']->get('page', PageAction::$ACTION_PAGE); ?>
-                    <?php // $GLOBALS['router']->get('/', PageAction::$ACTION_HOME); ?>
+                    <?php $GLOBALS['router']->get('page', PageAction::$ACTION_SWITCHPAGE, PageAction::$ACTION_HOME); ?>
+                    <?php $GLOBALS['router']->get('post', PostAction::$ACTION_POST); ?>
+                    <?php $GLOBALS['router']->get('admin', AdminAction::$ACTION_POST); ?>
                 </div>
             </div>
         </main>

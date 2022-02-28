@@ -26,6 +26,9 @@ require_once('./src/service/controllers/users.php');
 // Actions
 
 require_once('./src/actions/page.php');
+require_once('./src/actions/auth.php');
+require_once('./src/actions/post.php');
+require_once('./src/actions/admin.php');
 
 
 ?>
