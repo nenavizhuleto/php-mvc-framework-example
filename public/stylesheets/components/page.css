@@ -9,12 +9,13 @@
 
 .page__content {
 	display: flex;
+	flex-direction: column;
 	padding: 2rem 0;
 	justify-self: center;
 	/* backdrop-filter: blur(5em) saturate(150%); */
 
 	width: calc(100% - 10rem);
-	text-align: center;
+	/* text-align: center; */
 }
 
 .page__content h2 {

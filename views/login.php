@@ -1,18 +1,16 @@
-
 <h2>Login</h2>
 
-<form method="post" class="login__form">
-    <input 
-        class="login__input" 
-        type="text" 
-        name="username" 
-        autocomplete="off" 
-        placeholder="username">
-    <input 
-        class="login__input" 
-        type="password" 
-        name="password" 
-        autocomplete="off"
-        placeholder="password">
-    <input class="login__submit" type="submit" value="Sign in">
-</form>
+<?php
+
+use app\core\form\Form;
+
+?>
+
+<?php $form = Form::begin('', 'post'); ?>
+    <?php echo $form->field($model, 'username'); ?>
+    <?php echo $form->field($model, 'password')->password(); ?>
+    <div class="form__row-group">
+        <input class="form__input form__input--submit" type="submit" value="Login">
+        <a class="form__input form__input--submit" href="/register">Sign up</a>
+    </div>
+<?php Form::end(); ?>

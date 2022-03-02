@@ -1,0 +1,86 @@
+.form {
+	position: relative;
+	display: flex;
+	flex-direction: column;
+
+	border-radius: 16px;
+
+	padding: 1rem;
+
+	background-color: rgba(255, 255, 255, 0.3);
+	box-shadow: 0 3px 8px rgb(0 0 0 / 0.3);
+}
+
+.form a {
+	text-align: center;
+}
+
+.form__group {
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	margin: 0.5rem 0;
+}
+
+.form__row-group {
+	position: relative;
+	display: flex;
+	justify-items: center;
+	width: 100%;
+	gap: 1rem;
+}
+
+.form__row-group > .form__group {
+	margin: 0;
+}
+
+.form__invalid-feedback {
+	margin-top: 0.4em;
+	color: rgb(128, 0, 0);
+	font-size: 0.6em;
+}
+
+.form__input {
+	width: 100%;
+	/* margin: 1rem 0; */
+
+	background: rgba(255, 255, 255, 0.1);
+	box-shadow: 0 3px 5px rgb(0 0 0 / 0.4);
+	backdrop-filter: blur(0.3em);
+
+	outline: none;
+	border: none;
+	border-radius: 16px;
+
+	padding: 12px 24px;
+
+	font-size: 24px;
+
+	transition: 0.2s ease;
+}
+
+.form__input--is-invalid {
+	box-shadow: 0 0 2px 3px rgb(180, 0, 0);
+}
+
+.form__input--submit {
+	cursor: pointer;
+}
+
+.form__input::placeholder {
+	text-transform: uppercase;
+	text-align: center;
+	letter-spacing: 2px;
+	color: rgba(0, 0, 0, 0.5);
+}
+
+.form__input:hover {
+	background: rgba(255, 255, 255, 0.3);
+	border-radius: 12px;
+}
+
+.form__input--submit:hover {
+	background: rgba(255, 255, 255, 0.3);
+	border-radius: 12px;
+}
