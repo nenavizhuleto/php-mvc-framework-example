@@ -21,7 +21,7 @@ class m0001_initial {
 
             // user_types
             "CREATE TABLE `user_types` (
-                `id` int AUTO_INCREMENT PRIMARY KEY,
+                `id` int NOT NULL PRIMARY KEY,
                 `type` varchar(50) NOT NULL
               ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb3;",
 
@@ -36,11 +36,11 @@ class m0001_initial {
               ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb3;",
 
             // adding foreign key frow types to users
-            "ALTER TABLE `users`
-            ADD CONSTRAINT `typesOfUsers` FOREIGN KEY (`id`) 
-            REFERENCES `user_types` (`id`) 
-            ON DELETE RESTRICT 
-            ON UPDATE RESTRICT;",
+            // "ALTER TABLE `users`
+            // ADD CONSTRAINT `typesOfUsers` FOREIGN KEY (`id`) 
+            // REFERENCES `user_types` (`id`) 
+            // ON DELETE RESTRICT 
+            // ON UPDATE RESTRICT;",
 
             // adding foreign key frow users to photos
             "ALTER TABLE `photos`

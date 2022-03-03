@@ -6,8 +6,8 @@ class Max extends Rule {
 
     private int $max;
 
-    public function __construct($max) {
-        $this->max = $max;
+    public function __construct($params) {
+        $this->max = $params['max'];
     }
 
     public function validate($value): bool {

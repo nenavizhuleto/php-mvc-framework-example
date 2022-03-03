@@ -7,7 +7,7 @@ use app\core\form\Form;
 ?>
 
 <?php $form = Form::begin('', 'post'); ?>
-    <?php echo $form->field($model, 'username'); ?>
+    <?php echo $form->field($model, 'email'); ?>
     <?php echo $form->field($model, 'password')->password(); ?>
     <div class="form__row-group">
         <input class="form__input form__input--submit" type="submit" value="Login">

@@ -16,6 +16,14 @@ class SiteController extends Controller {
 
     }
 
+    public function gallery() {
+        return $this->render('gallery');
+    }
+
+    public function about() {
+        return $this->render('about');
+    }
+
     public function contact() {
         return $this->render('contact');
     }

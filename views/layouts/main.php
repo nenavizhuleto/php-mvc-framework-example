@@ -1,3 +1,9 @@
+<?php 
+use app\core\Application;
+
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 	<head>
@@ -18,16 +24,11 @@
                             <li class="nav__item"><a href="/gallery" class="nav__link">Gallery</a></li>
                             <li class="nav__item"><a href="/about" class="nav__link">About</a></li>
                             <li class="nav__item"><a href="/contact" class="nav__link">Contact</a></li>
+                            <?php if(Application::isGuest()): ?>
                             <li class="nav__item"><a href="/login" class="nav__link">Login</a></li>
-                            <li class="nav__item" id="menu">
-                                <a class="nav__link"></a>
-                                <div class="nav__menu" id="menu_block">
-                                    <ul>
-                                        <li><a href="?admin=create-post" class="nav__link">New post</a></li>
-                                        <li><a href="?logout" class="nav__link">Log out</a></li>
-                                    </ul>
-                                </div>
-                            </li>
+                            <?php else: ?>
+                            <li class="nav__item"><a href="/logout" class="nav__link">Logout</a></li>
+                            <?php endif; ?>
                         </ul>
                     </div>
                 </nav>
@@ -36,6 +37,11 @@
         <main>
             <div class="page">
                 <div class="page__content">
+                    <?php if (Application::$app->session->getFlash('success')): ?>
+                        <div class="alert alert--success">
+                            <?php echo Application::$app->session->getFlash('success') ?>
+                        </div>
+                    <?php endif; ?>
                     {{content}}
                 </div>
             </div>

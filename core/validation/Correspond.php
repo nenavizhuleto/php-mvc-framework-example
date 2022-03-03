@@ -7,9 +7,9 @@ class Correspond extends Rule {
     private string $match;
     private string $matchValue;
 
-    public function __construct($matchPair) {
-        $this->match = $matchPair[0];
-        $this->matchValue = $matchPair[1];
+    public function __construct($params) {
+        $this->match = $params['match'];
+        $this->matchValue = $params['value'];
     }
 
     public function validate($value): bool {

@@ -27,13 +27,12 @@ abstract class Model {
             $value = $this->{$attribute};
             foreach ($rules as $rule) {
                 if (is_array($rule)) {
-                    if (is_array($rule[1])) {
-                        $rule[1] = [
-                            $rule[1][0],
-                            $this->{$rule[1][1]}
-                        ];
+                    $className = $rule[0];
+                    $params = array_slice($rule, 1);
+                    if ($params['value']) {
+                        $params['value'] = $this->{$params['value']};
                     }
-                    $rule = new $rule[0]($rule[1]);
+                    $rule = new $className($params);
                 } else {
                     $rule = new $rule();
                 }
@@ -48,6 +47,10 @@ abstract class Model {
 
 
         return empty($this->errors);
+    }
+
+    public function labels(): array {
+        return [];
     }
 
     public function addError(string $attribute, string $message) {

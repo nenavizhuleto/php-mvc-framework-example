@@ -6,8 +6,8 @@ class Min extends Rule {
 
     private int $min;
 
-    public function __construct($min) {
-        $this->min = $min;
+    public function __construct($params) {
+        $this->min = $params['min'];
     }
 
     public function validate($value): bool {
