@@ -1,3 +1,8 @@
+<?php
+
+$this->title = 'Login';
+
+?>
 <h2>Login</h2>
 
 <?php

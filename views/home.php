@@ -1,6 +1,7 @@
 <?php
 
 use app\core\Application;
+$this->title = 'Photogallery';
 ?>
 <div>
 <h2>Photogallery</h2>

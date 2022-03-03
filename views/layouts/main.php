@@ -7,7 +7,7 @@ use app\core\Application;
 <!DOCTYPE html>
 <html lang="en">
 	<head>
-		<title>Photogallery</title>
+		<title><?= $this->title; ?></title>
         <link rel="stylesheet" href="stylesheets/main.css">
 	</head>
 	<body>
@@ -27,6 +27,7 @@ use app\core\Application;
                             <?php if(Application::isGuest()): ?>
                             <li class="nav__item"><a href="/login" class="nav__link">Login</a></li>
                             <?php else: ?>
+                            <li class="nav__item"><a href="/profile" class="nav__link">Profile</a></li>
                             <li class="nav__item"><a href="/logout" class="nav__link">Logout</a></li>
                             <?php endif; ?>
                         </ul>

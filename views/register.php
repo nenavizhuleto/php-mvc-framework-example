@@ -1,4 +1,8 @@
+<?php
 
+$this->title = 'Create an account';
+
+?>
 <h2>Create an account</h2>
 
 <?php
