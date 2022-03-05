@@ -1,6 +1,6 @@
 <?php
-use app\core\form\Form;
-use app\core\form\TextAreaField;
+use ihate\mvc\form\Form;
+use ihate\mvc\form\TextAreaField;
 $this->title = 'Contact Us';
 
 ?>

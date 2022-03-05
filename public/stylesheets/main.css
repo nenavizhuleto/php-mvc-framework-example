@@ -8,6 +8,9 @@
 @import url('./components/sidebar.css');
 @import url('./components/create_form.css');
 @import url('./components/form.css');
+@import url('./components/photo.css');
+@import url('./components/photos.css');
+@import url('./components/upload.css');
 
 @import url('./pages/home.css');
 @import url('./pages/gallery.css');
@@ -61,7 +64,7 @@ body {
 	min-width: 700px;
 	font-size: 24px;
 
-	overflow: hidden;
+	/* overflow: hidden; */
 }
 
 a {

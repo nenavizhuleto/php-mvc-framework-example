@@ -1,6 +1,6 @@
 <?php
 
-use app\core\Application;
+use ihate\mvc\Application;
 
 class m0001_initial {
     public function up() {
@@ -44,7 +44,7 @@ class m0001_initial {
 
             // adding foreign key frow users to photos
             "ALTER TABLE `photos`
-            ADD CONSTRAINT `photosAuthors` FOREIGN KEY (`id`) 
+            ADD CONSTRAINT `photosAuthors` FOREIGN KEY (`user_id`) 
             REFERENCES `users` (`id`) 
             ON DELETE RESTRICT 
             ON UPDATE RESTRICT;"

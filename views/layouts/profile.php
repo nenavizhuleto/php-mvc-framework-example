@@ -27,7 +27,8 @@ use ihate\mvc\Application;
                             <?php if(Application::isGuest()): ?>
                             <li class="nav__item"><a href="/login" class="nav__link">Login</a></li>
                             <?php else: ?>
-                            <li class="nav__item"><a href="/profile/" class="nav__link">Profile</a></li>
+                            <li class="nav__item"><a href="/profile" class="nav__link">Profile</a></li>
+                            <li class="nav__item"><a href="/logout" class="nav__link">Logout</a></li>
                             <?php endif; ?>
                         </ul>
                     </div>

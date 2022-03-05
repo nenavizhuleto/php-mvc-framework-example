@@ -1,6 +1,6 @@
 /* POST */
 
-.post {
+.hero-post {
 	flex-grow: 1;
 	background-color: rgba(255, 255, 255, 0.185);
 	color: rgb(255, 255, 255);
@@ -16,7 +16,7 @@
 	transition: all 0.2s;
 }
 
-.post__content {
+.hero-post__content {
 	position: relative;
 	overflow: hidden;
 	display: flex;
@@ -24,7 +24,7 @@
 	height: 100%;
 }
 
-.post__title {
+.hero-post__title {
 	flex-grow: 2;
 	background-color: rgba(255, 255, 255, 0.5);
 
@@ -38,7 +38,7 @@
 	transition: 0.5s ease;
 }
 
-.post__description {
+.hero-post__description {
 	position: absolute;
 	bottom: 100%;
 	left: 0;
@@ -51,16 +51,16 @@
 	backdrop-filter: blur(8px);
 }
 
-.post__content:hover .post__description {
+.hero-post__content:hover .hero-post__description {
 	bottom: 0;
 	height: 100%;
 }
 
-.post__content:hover .post__title {
+.hero-post__content:hover .hero-post__title {
 	transform: translate(0, -100%);
 }
 
-.post__content:hover .post__date {
+.hero-post__content:hover .hero-post__date {
 	transform: translate(0, 100%);
 }
 
@@ -73,7 +73,7 @@
 	left: 16px;
 }
 
-.post__img {
+.hero-post__img {
 	flex-grow: 7;
 	display: block;
 	width: 100%;
@@ -84,7 +84,7 @@
 	transition: 0.5s ease;
 }
 
-.post__date {
+.hero-post__date {
 	flex-grow: 1;
 	font-size: 0.5em;
 	background-color: rgba(255, 255, 255, 0.5);

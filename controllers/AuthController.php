@@ -2,11 +2,11 @@
 
 namespace app\controllers;
 
-use app\core\Application;
-use app\core\middlewares\AuthMiddleware;
-use app\core\Controller;
-use app\core\Request;
-use app\core\Response;
+use ihate\mvc\Application;
+use ihate\mvc\middlewares\AuthMiddleware;
+use ihate\mvc\Controller;
+use ihate\mvc\Request;
+use ihate\mvc\Response;
 use app\models\LoginModel;
 use app\models\User;
 
@@ -66,9 +66,10 @@ class AuthController extends Controller {
 
     }
 
-    public function profile() {
-        
-        return $this->render('profile');
+    public function profile(Request $request) {
+        $this->setLayout('profile');
+
+        return $this->render('profile', $request->getRouteParams());
     }
 
 }

@@ -2,10 +2,10 @@
 
 namespace app\models;
 
-use app\core\Application;
-use app\core\Model;
-use app\core\validation\Email;
-use app\core\validation\Required;
+use ihate\mvc\Application;
+use ihate\mvc\Model;
+use ihate\mvc\validation\Email;
+use ihate\mvc\validation\Required;
 
 class LoginModel extends Model {
 

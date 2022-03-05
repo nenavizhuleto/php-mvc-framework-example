@@ -2,13 +2,14 @@
 
 namespace app\models;
 
-use app\core\UserModel;
-use app\core\validation\Correspond;
-use app\core\validation\Required;
-use app\core\validation\Email;
-use app\core\validation\Min;
-use app\core\validation\Max;
-use app\core\validation\Unique;
+use ihate\mvc\UserModel;
+use ihate\mvc\validation\Correspond;
+use ihate\mvc\validation\Required;
+use ihate\mvc\validation\Email;
+use ihate\mvc\validation\Min;
+use ihate\mvc\validation\Max;
+use ihate\mvc\validation\Unique;
+
 
 class User extends UserModel {
 
@@ -41,6 +42,18 @@ class User extends UserModel {
     public function getDisplayName(): string
     {
         return $this->firstname . ' ' . $this->lastname;
+    }
+
+    public function getDisplayType() {
+        if ($this->type_id == 0) {
+            return 'User';
+        } else {
+            return 'Admin';
+        }
+    }
+
+    public function isAdmin() {
+        return $this->type_id == 1;
     }
 
     public function labels(): array

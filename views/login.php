@@ -7,7 +7,7 @@ $this->title = 'Login';
 
 <?php
 
-use app\core\form\Form;
+use ihate\mvc\form\Form;
 
 ?>
 

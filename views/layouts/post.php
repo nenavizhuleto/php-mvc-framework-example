@@ -1,7 +1,6 @@
 <?php 
 use ihate\mvc\Application;
 
-
 ?>
 
 <!DOCTYPE html>

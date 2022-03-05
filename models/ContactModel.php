@@ -2,9 +2,9 @@
 
 namespace app\models;
 
-use app\core\Model;
-use app\core\validation\Email;
-use app\core\validation\Required;
+use ihate\mvc\Model;
+use ihate\mvc\validation\Email;
+use ihate\mvc\validation\Required;
 
 class ContactModel extends Model {
 
@@ -30,7 +30,7 @@ class ContactModel extends Model {
     }
 
     public function send() {
-
+        return true;
     }
 
 }

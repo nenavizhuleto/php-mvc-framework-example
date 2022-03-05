@@ -1,0 +1,19 @@
+.photo {
+	display: flex;
+	box-shadow: 0 3px 15px rgb(0 0 0 / 0.8);
+	width: 500px;
+}
+
+.photo__content {
+}
+
+.photo__img {
+	display: block;
+	object-fit: cover;
+	width: 100%;
+}
+
+.photo__title {
+	background-color: #fff;
+	padding: 1rem;
+}

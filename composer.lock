@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "c1a879e35c0274c1a4d7e03d6e1e2ba7",
+    "content-hash": "6a11a4d3f214d070eb770232de512355",
     "packages": [
         {
             "name": "graham-campbell/result-type",
@@ -67,6 +67,43 @@
                 }
             ],
             "time": "2021-11-21T21:41:47+00:00"
+        },
+        {
+            "name": "ihatesummerr/php-mvc-core",
+            "version": "v1.0.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/ihatesummerr/php-mvc-framework.git",
+                "reference": "c8fabdea52e75218a5ed4b7714b051f45039809e"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/ihatesummerr/php-mvc-framework/zipball/c8fabdea52e75218a5ed4b7714b051f45039809e",
+                "reference": "c8fabdea52e75218a5ed4b7714b051f45039809e",
+                "shasum": ""
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "ihate\\mvc\\": "."
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "ihatesummerr",
+                    "email": "ihatesummerr@yahoo.com"
+                }
+            ],
+            "description": "Ligthweight MVC Framework for PHP",
+            "support": {
+                "issues": "https://github.com/ihatesummerr/php-mvc-framework/issues",
+                "source": "https://github.com/ihatesummerr/php-mvc-framework/tree/v1.0.2"
+            },
+            "time": "2022-03-03T11:03:44+00:00"
         },
         {
             "name": "phpoption/phpoption",

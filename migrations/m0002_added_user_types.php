@@ -1,6 +1,6 @@
 <?php
 
-use app\core\Application;
+use ihate\mvc\Application;
 
 class m0002_added_user_types {
     public function up() {

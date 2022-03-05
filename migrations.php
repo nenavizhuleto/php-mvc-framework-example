@@ -1,6 +1,6 @@
 <?php
 
-use app\core\Application;
+use ihate\mvc\Application;
 
 require __DIR__."/vendor/autoload.php";
 

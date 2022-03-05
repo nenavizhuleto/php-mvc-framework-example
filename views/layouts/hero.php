@@ -1,7 +1,7 @@
 <?php 
 use ihate\mvc\Application;
 
-
+$photos = $this->photos;
 ?>
 
 <!DOCTYPE html>
@@ -27,7 +27,7 @@ use ihate\mvc\Application;
                             <?php if(Application::isGuest()): ?>
                             <li class="nav__item"><a href="/login" class="nav__link">Login</a></li>
                             <?php else: ?>
-                            <li class="nav__item"><a href="/profile/" class="nav__link">Profile</a></li>
+                            <li class="nav__item"><a href="/profile" class="nav__link">Profile</a></li>
                             <?php endif; ?>
                         </ul>
                     </div>
@@ -35,6 +35,28 @@ use ihate\mvc\Application;
             </div>
         </header>
         <main>
+            <div class="hero">
+                <div class="hero__content">
+                    <?php foreach ($photos as $photo): ?>
+                        <a href="/post/<?= $photo['id'] ?>" class="hero-post">
+                            <div class="hero-post__content">
+                                <p class="hero-post__title"><?= $photo['title'] ?></p>
+                                <img src="<?= $photo['img'] ?>" alt="" class="hero-post__img">
+                                <div class="hero-post__description">
+                                    <div class="description__text">
+                                    <?= $photo['description'] ?>
+                                    </div>
+                                </div>
+                                <div class="hero-post__date">
+                                    <span class="date__text">
+                                    <?= $photo['date'] ?>
+                                    </span>    
+                                </div>
+                            </div>
+                        </a>
+                    <?php endforeach; ?>
+                </div>
+            </div>
             <div class="page">
                 <div class="page__content">
                     <?php if (Application::$app->session->getFlash('success')): ?>
