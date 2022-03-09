@@ -1,0 +1,29 @@
+.photo {
+	display: flex;
+	box-shadow: 0 3px 15px rgb(0 0 0 / 0.8);
+	width: 700px;
+}
+
+.photo__content {
+	width: 100%;
+}
+
+.photo__img {
+	display: block;
+	object-fit: cover;
+	width: 100%;
+}
+
+.photo__caption {
+	display: flex;
+	width: 100%;
+	justify-content: space-between;
+	background-color: #fff;
+	padding: 1rem;
+}
+
+.photo__title {
+}
+
+.photo__author {
+}
