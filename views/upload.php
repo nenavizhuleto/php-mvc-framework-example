@@ -6,7 +6,7 @@ $this->title = 'Upload new photo';
 ?>
 <h2>Upload new photo</h2>
 
-<?php $form = Form::begin('', 'post'); ?>
+<?php $form = Form::begin('', 'post', 'enctype="multipart/form-data"'); ?>
     <?php echo $form->field($model, 'title'); ?>
     <?php echo new TextAreaField($model, 'description') ?>
     <div class="form__group">

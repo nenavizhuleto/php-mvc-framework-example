@@ -4,3 +4,10 @@
 
 .gallery__content {
 }
+
+.gallery__upload {
+	display: block;
+	width: fit-content;
+	margin: 2rem 0;
+	padding: 1rem;
+}

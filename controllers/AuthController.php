@@ -8,6 +8,7 @@ use ihate\mvc\Controller;
 use ihate\mvc\Request;
 use ihate\mvc\Response;
 use app\models\LoginModel;
+use app\models\Photo;
 use app\models\User;
 
 class AuthController extends Controller {
@@ -69,7 +70,12 @@ class AuthController extends Controller {
     public function profile(Request $request) {
         $this->setLayout('profile');
 
-        return $this->render('profile', $request->getRouteParams());
+        $params = [
+            'params' => $request->getRouteParams(),
+            'photos' => Photo::find(['user_id' => Application::$app->session->get('user')])
+        ];
+
+        return $this->render('profile', $params);
     }
 
 }

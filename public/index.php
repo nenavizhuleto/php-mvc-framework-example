@@ -48,6 +48,10 @@ $app->router->get('/profile', [AuthController::class, 'profile']);
 $app->router->get('/profile/{id:\d+}/{username}', [AuthController::class, 'profile']);
 
 $app->router->get('/post/{id:\d+}', [PostController::class, 'post']);
+$app->router->get('/post/edit/{id:\d+}', [PostController::class, 'edit']);
+$app->router->post('/post/edit/{id:\d+}', [PostController::class, 'edit']);
+$app->router->get('/post/delete/{id:\d+}', [PostController::class, 'delete']);
+$app->router->post('/post/delete/{id:\d+}', [PostController::class, 'delete']);
 
 
 

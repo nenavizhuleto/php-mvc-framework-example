@@ -70,16 +70,16 @@
         },
         {
             "name": "ihatesummerr/php-mvc-core",
-            "version": "v1.0.2",
+            "version": "v1.0.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/ihatesummerr/php-mvc-framework.git",
-                "reference": "c8fabdea52e75218a5ed4b7714b051f45039809e"
+                "reference": "151939902b9c2388bc56812351e0d7a25439cbda"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/ihatesummerr/php-mvc-framework/zipball/c8fabdea52e75218a5ed4b7714b051f45039809e",
-                "reference": "c8fabdea52e75218a5ed4b7714b051f45039809e",
+                "url": "https://api.github.com/repos/ihatesummerr/php-mvc-framework/zipball/151939902b9c2388bc56812351e0d7a25439cbda",
+                "reference": "151939902b9c2388bc56812351e0d7a25439cbda",
                 "shasum": ""
             },
             "type": "library",
@@ -101,9 +101,9 @@
             "description": "Ligthweight MVC Framework for PHP",
             "support": {
                 "issues": "https://github.com/ihatesummerr/php-mvc-framework/issues",
-                "source": "https://github.com/ihatesummerr/php-mvc-framework/tree/v1.0.2"
+                "source": "https://github.com/ihatesummerr/php-mvc-framework/tree/v1.0.4"
             },
-            "time": "2022-03-03T11:03:44+00:00"
+            "time": "2022-03-09T04:31:58+00:00"
         },
         {
             "name": "phpoption/phpoption",

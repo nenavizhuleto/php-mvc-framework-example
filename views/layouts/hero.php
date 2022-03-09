@@ -38,18 +38,18 @@ $photos = $this->photos;
             <div class="hero">
                 <div class="hero__content">
                     <?php foreach ($photos as $photo): ?>
-                        <a href="/post/<?= $photo['id'] ?>" class="hero-post">
+                        <a href="/post/<?= $photo->id ?>" class="hero-post">
                             <div class="hero-post__content">
-                                <p class="hero-post__title"><?= $photo['title'] ?></p>
-                                <img src="<?= $photo['img'] ?>" alt="" class="hero-post__img">
+                                <p class="hero-post__title"><?= $photo->title ?></p>
+                                <img src="<?= $photo->img ?>" alt="" class="hero-post__img">
                                 <div class="hero-post__description">
                                     <div class="description__text">
-                                    <?= $photo['description'] ?>
+                                    <?= $photo->description ?>
                                     </div>
                                 </div>
                                 <div class="hero-post__date">
                                     <span class="date__text">
-                                    <?= $photo['date'] ?>
+                                    <?= $photo->author->getDisplayName() ?>
                                     </span>    
                                 </div>
                             </div>
