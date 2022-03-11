@@ -1,14 +1,11 @@
 /* POST */
 
 .hero-post {
-	flex-grow: 1;
+	display: flex;
 	background-color: rgba(255, 255, 255, 0.185);
 	color: rgb(255, 255, 255);
-	max-width: calc(25% - 32px);
-	min-width: 312px;
+	width: 25%;
 
-	height: calc(100% - 32px);
-	margin: 16px 0px;
 	box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
 
 	cursor: pointer;
@@ -19,13 +16,11 @@
 .hero-post__content {
 	position: relative;
 	overflow: hidden;
-	display: flex;
 	flex-direction: column;
 	height: 100%;
 }
 
 .hero-post__title {
-	flex-grow: 2;
 	background-color: rgba(255, 255, 255, 0.5);
 
 	color: white;
@@ -33,7 +28,7 @@
 	text-shadow: 0 3px 5px rgb(0 0 0 / 0.3);
 	text-transform: uppercase;
 	letter-spacing: 2px;
-	padding: 16px;
+	padding: 1rem;
 
 	transition: 0.5s ease;
 }
@@ -92,7 +87,7 @@
 	text-shadow: 0 3px 5px rgb(0 0 0 / 0.2);
 	color: rgb(0, 0, 0);
 	transition: 0.5s ease;
-	padding: 16px;
+	padding: 1rem;
 }
 
 .date__text {

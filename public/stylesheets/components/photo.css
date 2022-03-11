@@ -1,10 +1,12 @@
 .photo {
-	display: flex;
+	display: block;
 	box-shadow: 0 3px 15px rgb(0 0 0 / 0.8);
-	width: 700px;
+	width: 25%;
 }
 
 .photo__content {
+	display: flex;
+	flex-direction: column;
 	width: 100%;
 }
 

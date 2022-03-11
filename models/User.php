@@ -13,14 +13,9 @@ use ihate\mvc\validation\Unique;
 
 class User extends UserModel {
 
-    const STATUS_INACTIVE = 0;
-    const STATUS_ACTIVE = 1;
-    const STATUS_DELETED = 2;
-
     public string $firstname = '';
     public string $lastname = '';
     public string $email = '';
-    public int $status = self::STATUS_INACTIVE;
     public string $password = '';
     public string $passwordConfirm = '';
     public int $type_id = 0;
@@ -79,7 +74,6 @@ class User extends UserModel {
     }
 
     public function save() {
-        $this->status = self::STATUS_INACTIVE;
         $this->password = password_hash($this->password, PASSWORD_DEFAULT);
         return parent::save();
     }
