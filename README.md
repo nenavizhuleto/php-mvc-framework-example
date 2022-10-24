@@ -1,2 +1,2 @@
 ﻿# Photogallery
-This project uses another repo called MVC PHP Framework
+This project uses another repo called PHP MVC Framework
